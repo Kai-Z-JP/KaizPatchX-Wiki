@@ -26,5 +26,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           repository: Kai-Z-JP/KaizPatchX.wiki # specify the wiki repo and push the update.
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PUSH_TO_WIKI }}
           branch: master
