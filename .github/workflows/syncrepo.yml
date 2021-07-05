@@ -22,9 +22,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: master
-      - name: Push to wiki repo
-        uses: ad-m/github-push-action@master
+      - name: Sync with local action
+        uses: kai-tub/external-repo-sync-action@v1
         with:
-          repository: Kai-Z-JP/KaizPatchX.wiki # specify the wiki repo and push the update.
-          github_token: ${{ secrets.PUSH_TO_WIKI }}
-          branch: master
+          source-directory: "./"
+          repository: Kai-Z-JP/KaizPatchX.wiki
+        env:
+          GH_ACCESS_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
