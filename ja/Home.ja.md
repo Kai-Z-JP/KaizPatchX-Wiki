@@ -33,3 +33,6 @@ KaizPatchXはNGTLib・RTM・MCTEの非公式改造物です。
 
 ## 修正不具合
 [[こちら|Fixed_Bugs.ja]]
+
+## モデルパック制作者向け情報
+[[こちら|Infomation for ModelPack Creators.ja]]
