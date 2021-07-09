@@ -23,16 +23,16 @@ KaizPatchXはNGTLib・RTM・MCTEの非公式改造物です。
 4.完了！  
 
 ## 移植機能
-[[こちら|Ported_Features.ja]]
+[[こちら|Ported Features.ja]]
 
 ## 追加機能
-[[こちら|Added_Features.ja]]
+[[こちら|Added Features.ja]]
 
 ## 変更機能
-[[こちら|Changed_Features.ja]]
+[[こちら|Changed Features.ja]]
 
 ## 修正不具合
-[[こちら|Fixed_Bugs.ja]]
+[[こちら|Fixed Bugs.ja]]
 
 ## モデルパック制作者向け情報
 [[こちら|Infomation for ModelPack Creators.ja]]
