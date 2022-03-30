@@ -32,7 +32,7 @@
     - [古い形式のコネクタのサポート](#古い形式のコネクタのサポート)
     - [コネクタのオフセット](#コネクタのオフセット)
     - [台車の強制チャンクロード](#台車の強制チャンクロード)
-    - [/summon コマンド](#summon-コマンド)
+    - [/rtm summon コマンド](#rtm-summon-コマンド)
       - [使用例](#使用例)
     - [アイテムにDataMap/Offsetの保存情報の表示](#アイテムにdatamapoffsetの保存情報の表示)
     - [Fキー押下でCustomButtonの情報の編成内全車両への送信](#fキー押下でcustombuttonの情報の編成内全車両への送信)
@@ -165,9 +165,9 @@
 ### 台車の強制チャンクロード
 - [x] KaizPatchX: 1.4.1  
   台車を強制的にロードします。
-### /summon コマンド
+### /rtm summon コマンド
 - [x] KaizPatchX: 1.4.2  
-  /summonで車両を出現させられます。
+  /rtm summonで車両を出現させられます。
   #### 使用例
   /rtm summon [Type]:[SubType] [ModelName] [x] [y] [z] \<yaw> \<JsonNBT>  
   yawは線路に合わせて自動で補正されます。  
