@@ -21,7 +21,7 @@
     - [クリエイティブモード時のレールクラフト時間削除](#クリエイティブモード時のレールクラフト時間削除)
     - [レンチ吸い付き切替](#レンチ吸い付き切替)
     - [MCtrlコマンドのタブ補完](#mctrlコマンドのタブ補完)
-    - [信号･看板のオフセット](#信号看板のオフセット)
+    - [信号･標識のオフセット](#信号標識のオフセット)
     - [モデルのロード状況の数値表示](#モデルのロード状況の数値表示)
     - [サーバースクリプトからの加減速度制御](#サーバースクリプトからの加減速度制御)
       - [実装方法](#実装方法-1)
@@ -68,7 +68,7 @@
   スニーク状態で踏切・信号・転轍機・照明・標識モデルを1度刻み設置できます。
 ### レール変形操作方法の選択
 - [x] KaizPatchNWS: 1.7.10.12  
-  レールの変形を操作する方法をレンチ方式(1.7.10)とGUI方式(1.12.2)から選択できます。
+  `/rtm use1122marker (true|false)`でレールの変形を操作する方法をレンチ方式(1.7.10)とGUI方式(1.12.2)から選択できます。
 ### レール・ワイヤー描画距離の延長
 - [x] KaizPatchNWS: 1.7.10.13  
   レール・ワイヤーの描画が見切れないようになります。
@@ -77,7 +77,7 @@
   コマンド入力時にタブ補完が行えます。
 ### FlySpeedコマンド
 - [x] KaizPatchX: 1.1RC1  
-  /rtm flyspeed [0.0-10.0] でFlySpeedを変更できます。
+  `/rtm flyspeed [0.0-10.0]` でFlySpeedを変更できます。
 ### 車内アナウンスの編成内全車両での再生
 - [x] KaizPatchX: 1.1RC1  
   車内アナウンスを再生時に編成内全車両で再生します。
@@ -99,9 +99,9 @@
 ### MCtrlコマンドのタブ補完
 - [x] KaizPatchX: 1.3RC1  
   MCtrlコマンド入力時にタブ補完が行えます。
-### 信号･看板のオフセット
+### 信号･標識のオフセット
 - [x] KaizPatchX: 1.3RC1.1  
-  信号･看板のオフセットを設定できます。
+  信号･標識のオフセットを設定できます。
 ### モデルのロード状況の数値表示
 - [x] KaizPatchX: 1.3.0-RC2  
   モデルのロード状況を数値表示します。
@@ -172,15 +172,17 @@
   /rtm summon [Type]:[SubType] [ModelName] [x] [y] [z] \<yaw> \<JsonNBT>  
   yawは線路に合わせて自動で補正されます。  
   また、yawとJsonNBTは任意です(ただし、JsonNBTを設定する場合はyawの設定も必要です)  
-  デフォルトの223系先頭車をx: 0, y: 4, z: 0にyaw: 0で色にffffff(白)、DataMapにtestKey=(String)testValue、CustomNameにTestNameを設定して召喚する場合の例
-  ```
+  デフォルトの223系先頭車をx: 0, y: 4, z: 0にyaw: 0で色にffffff(白)、DataMapにtestKey=(String)testValue、CustomNameにTestNameを設定して召喚する場合の例  
+  `
   /rtm summon ModelTrain:EC 223h 0 4 0 0 {Color:16777215,DataMap:{DataList:[0:{Type:"String",Data:"testValue",Flag:3,Name:"testKey",},],},Name:"TestName",}
-  ```
+  `  
   現時点でTypeにはModelTrainが、SubTypeにはEC, DC, TC, CC, Testが設定可能です。
 
 ### アイテムにDataMap/Offsetの保存情報の表示
 - [x] KaizPatchX: 1.4.5  
   アイテムにDataMap/Offsetの保存情報の表示を追加します。
+
+  ![image](https://user-images.githubusercontent.com/42648535/161425670-fb8b7550-7bde-4ab8-8f0b-831b13a2c182.png)
 ### Fキー押下でCustomButtonの情報の編成内全車両への送信
 - [x] KaizPatchX: 1.4.5  
   CustomButtonの情報の編成内全車両への送信をFキー押下で行えます。
